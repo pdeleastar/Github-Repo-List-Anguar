@@ -4,7 +4,9 @@
   "author": "YOUR NAME",
   "license": "ISC",
   "description": "a repo lister app",
-  "license": "ISC",
   "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-connect": "^3.2.2"
+  }
 }
