@@ -1,0 +1,10 @@
+{
+  "name": "repo-lister-angular",
+  "version": "1.0.0",
+  "author": "YOUR NAME",
+  "license": "ISC",
+  "description": "a repo lister app",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {}
+}

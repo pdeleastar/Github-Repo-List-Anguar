@@ -1,0 +1,13 @@
+{
+  "name": "repo-lister-angular",
+  "version": "0.0.0",
+  "authors": [
+    "YOUR NAME"
+  ],
+  "license": "ISC",
+  "private": true,
+  "dependencies": {
+    "angular": "1.5.X",
+    "bootstrap": "3.3.X"
+  }
+}
