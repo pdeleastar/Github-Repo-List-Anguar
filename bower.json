@@ -8,6 +8,7 @@
   "private": true,
   "dependencies": {
     "angular": "1.5.X",
-    "bootstrap": "3.3.X"
+    "bootstrap": "3.3.X",
+    "angular-mocks": "^1.5.3"
   }
 }
