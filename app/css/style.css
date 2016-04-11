@@ -46,18 +46,6 @@
   color:#fafafa;
 }
 
-.unit-test-button {
-  border:2px solid red;
-  background-color:#fafafa;
-  color:red;
-  margin: 10px;
-}
-.unit-test-button:hover  {
-  background-color:red;
-  color:#fafafa;
-}
-
-
 .result {
   color: white;
   display: inline;
