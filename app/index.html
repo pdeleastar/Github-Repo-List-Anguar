@@ -6,35 +6,67 @@
   <title>Github Repo Lister Angular</title>
   <link href="css/style.css" type="text/css" rel="stylesheet"/>
   <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="bower_components/jquery-ui/themes/smoothness/jquery-ui.css" rel="stylesheet">
+
 </head>
 
-<body ng-controller="repoLister">
-
-<div class="search">
-  <input ng-model="username" type="text" class="search-input">
-  <button ng-click="loadRepos()" class="search-btn">Search</button>
-  <span class="result"> {{message}} </span>
-</div>
-
-<table class="repo_table">
-  <thead>
-  <tr>
-    <th>Repo Name</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr ng-repeat="repo in repoList">
-    <td>{{repo.name}}</td>
-  </tr>
-  </tbody>
-</table>
-
-<script src="bower_components/jquery/dist/jquery.min.js"></script>
-<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="bower_components/angular/angular.min.js"></script>
-
-<script src="js/app.js" type="text/javascript"></script>
-
+<body class="background" ng-controller="repoLister">
+  <div class="container search-box">
+    <div class="row">
+      <div class="col-md-3">
+        <button id="opener" class="info-button">Open Info</button>
+      </div>
+      <div class="col-md-6">
+        <input ng-model="username" type="text" class="search-input">
+        <button ng-click="loadRepos()" class="search-btn button">Search</button>
+      </div>
+      <div class="col-md-3">
+        <span class="result"> {{message}} </span>
+      </div>
+    </div>
+  </div>
+  <div id="dialog" title="Github Repository Lister">
+    <p>Type a Github username into the search box and click the search button to display the repositories below.</p>
+  </div>
+  <div class="container repo-list-box">
+    <table class="repo_table">
+      <thead>
+        <tr>
+          <th><strong><u>{{repositories}}</u></strong></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="repo in repoList">
+          <td>{{repo.name}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/jquery-ui/jquery-ui.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="js/app.js" type="text/javascript"></script>
+  <script>
+    $(function() {
+      $( "#dialog" ).dialog({
+        autoOpen: false,
+        show: {
+          effect: "fade",
+          duration: 500
+        },
+        hide: {
+          effect: "fade",
+          duration: 500
+        }
+      });
+      $( "#opener" ).click(function() {
+        $( "#dialog" ).dialog( "open" );
+      });
+    });
+  </script>
 </body>
+
+
 
 </html>

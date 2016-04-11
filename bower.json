@@ -9,6 +9,7 @@
   "dependencies": {
     "angular": "1.5.X",
     "bootstrap": "3.3.X",
-    "angular-mocks": "^1.5.3"
+    "angular-mocks": "^1.5.3",
+    "jquery-ui": "^1.11.4"
   }
 }

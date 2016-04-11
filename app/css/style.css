@@ -1,0 +1,64 @@
+.background {
+  background-image: url('github-mark.png');
+  background-size: 25%;
+  background-repeat: repeat;
+  font-family: "Lucida Console", Monaco, monospace;
+
+}
+
+.search-box {
+  width: 100px;
+  margin-top: 5%;
+  padding: 10px;
+  background-color: rgba(100,149,237, 0.8);
+  text-align: center;
+}
+
+.container{
+  max-width: 600px;
+}
+
+.repo-list-box {
+  text-align: left;
+
+  background-color: rgba(100,149,237,0.1);
+}
+
+.button {
+
+
+  border:2px solid #fafafa;
+  background-color:#207cca;
+  color:#fafafa;
+}
+.button:hover  {
+  background-color:#fafafa;
+  color:#207cca;
+}
+
+.info-button {
+  border:2px solid #207cca;
+  background-color:#fafafa;
+  color:#207cca;
+}
+.info-button:hover  {
+  background-color:#207cca;
+  color:#fafafa;
+}
+
+.unit-test-button {
+  border:2px solid red;
+  background-color:#fafafa;
+  color:red;
+  margin: 10px;
+}
+.unit-test-button:hover  {
+  background-color:red;
+  color:#fafafa;
+}
+
+
+.result {
+  color: white;
+  display: inline;
+}
